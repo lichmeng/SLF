@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.sugar.myapplication.view.NoScrollViewPager
+            android:id="@+id/cotent_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rg_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category_bg_normal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/tab_home"
+                    android:checked="true"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/selector_tab_home"
+                    android:text="@string/tabs_home"/>
+
+                <RadioButton
+                    android:id="@+id/rb_category"
+                    style="@style/tab_home"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/selector_tab_category"
+                    android:text="@string/tabs_category"/>
+
+                <RadioButton
+                    android:id="@+id/rb_discovery"
+                    style="@style/tab_home"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/selector_tab_discovery"
+                    android:text="@string/tabs_discovery"/>
+
+                <RadioButton
+                    android:id="@+id/rb_cart"
+                    style="@style/tab_home"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/selector_tab_cart"
+                    android:text="@string/tabs_cart"/>
+
+                <RadioButton
+                    android:id="@+id/rb_my"
+                    style="@style/tab_home"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/selector_tab_mine"
+                    android:text="@string/tabs_my_count"/>
+            </RadioGroup>
+            <!--用来显示提示消息-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#00000000"
+                android:orientation="horizontal"
+
+                >
+                <!-- 显示提醒信息的button android:layout_weight=1  是3个butto，平分手机界面的宽度-->
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    />
+                <!-- 占位置的button，以便适应不同分辨率手机 -->
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    />
+                <!-- 占位置的button，以便适应不同分辨率手机 -->
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    />
+
+                <Button
+
+                    android:id="@+id/btn_show_msg"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc000000"
+        android:visibility="invisible">
+
+        <!--第三方控件-->
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/pb_download_progress"
+            style="@style/NumberProgressBar_Funny_Orange"
+            android:layout_width="250dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

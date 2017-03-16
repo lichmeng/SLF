@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="120dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_shop_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text=" ￥1999.9"
+                        android:textColor="#f00"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingLeft="120dp"
+                    android:textSize="16sp"
+                    android:maxLines="3"
+                    android:paddingRight="16dp"
+                    android:text="红孩子 红孩子"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="已选择选择"
+                        android:visibility="gone"
+                        android:textColor="#999999" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="颜色"
+                        android:textColor="#999999" />
+
+                    <TextView
+                        android:id="@+id/tv_shop_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="尺寸"
+                        android:textColor="#999999" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+
+                android:background="@color/ShawLiner" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="数量"
+                        android:textSize="16sp"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="8dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_shop_cut"
+                            android:layout_width="56dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/selector_join_cart"
+                            android:layout_height="30dp"
+                            android:text="—" />
+
+                        <TextView
+                            android:id="@+id/tv_shop_num"
+                            android:layout_width="56dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@drawable/bg_border"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:maxEms="999"
+                            android:paddingLeft="3dp"
+                            android:singleLine="true"
+                            android:text="1"
+                            android:textColor="#f00" />
+
+                        <Button
+                            android:id="@+id/btn_shop_add"
+                            android:layout_width="56dp"
+                            android:textColor="#fff"
+                            android:layout_height="30dp"
+                            android:background="@drawable/selector_join_cart"
+                            android:text="+" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/ShawLiner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="颜色"
+                        android:textSize="16sp"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <com.sugar.myapplication.view.FlowLayout
+                        android:id="@+id/fl_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </com.sugar.myapplication.view.FlowLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/ShawLiner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/ShawLiner" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="尺寸"
+                        android:textColor="#000" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.sugar.myapplication.view.FlowLayout
+                            android:id="@+id/fl_container_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </com.sugar.myapplication.view.FlowLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_buy_stages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/ShawLiner" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_buy_input_message"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_join_cart"
+                android:text="加入购物车"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_shop_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_border"
+            android:padding="1dp"
+            android:src="@drawable/empty" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/icon_19_delete"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp" />
+    </RelativeLayout>
+</LinearLayout>

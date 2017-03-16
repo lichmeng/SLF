@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/header_home_topic"/>
+
+    <include layout="@layout/header_home_feature"/>
+
+    <include layout="@layout/header_home_news"/>
+
+    <include layout="@layout/header_home_seckill"/>
+
+    <include layout="@layout/jd_home_pic"/>
+</LinearLayout>

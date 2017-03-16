@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:showIn="@layout/fragment_mine">
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_order_detail_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mine_point_pay"
+            android:text="1"
+            style="@style/mine_order_detail_point"/>
+
+        <TextView
+            android:id="@+id/tv_mine_refund"
+            style="@style/tv_mine_style"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/mine_refund"
+            android:text="待付款"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_order_detail_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mine_point_address"
+            android:text="1"
+            style="@style/mine_order_detail_point"/>
+
+        <TextView
+            android:id="@+id/mine_delivery"
+            style="@style/tv_mine_style"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/mine_delivery"
+            android:text="待收货"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_order_detail_pingjia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mine_point_pingjia"
+            android:text="1"
+            style="@style/mine_order_detail_point"/>
+
+        <TextView
+            android:id="@+id/tv_mine_pingjia"
+            style="@style/tv_mine_style"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/mine_pingjia"
+            android:text="待评价"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_order_detail_order"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/mine_point_order"
+            android:text="1"
+            style="@style/mine_order_detail_point"/>
+
+        <TextView
+            android:id="@+id/tv_mine_order"
+            style="@style/tv_mine_style"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/mine_order"
+            android:text="我的订单"/>
+    </RelativeLayout>
+</LinearLayout>

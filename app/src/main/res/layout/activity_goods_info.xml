@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <include layout="@layout/goods_info_include_title" />
+    <!--可以控制滑动的viewpager-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#22000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_goods_info_care"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/goods_info_ike"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="关注"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_goods_info_cart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/goods_info_cart"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="购物车"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_container_cart"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/iv_goods_cart_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mine_point" />
+                <TextView
+                    android:id="@+id/tv_cart_num"
+                    android:textColor="#fff"
+                    android:textSize="11sp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="82dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_join_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_join_cart"
+            android:gravity="center"
+            android:text="加入购物车"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

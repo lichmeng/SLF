@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:background="@drawable/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:clickable="true"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/tv_splash_time"
+        android:text="sdfds"
+        android:textColor="#fff"
+        android:background="@drawable/selector_splash_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>

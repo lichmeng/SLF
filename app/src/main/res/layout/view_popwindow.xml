@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="6dp"
+        android:background="#88000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:paddingLeft="25dp">
+
+        <TextView
+            android:id="@+id/tv_pop_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/selector_sort_choice"
+            android:focusable="true"
+            android:paddingRight="8dp"
+            android:text="综合排序"
+            android:enabled="false"
+            android:textColor="@color/selector_choice_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_pop_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:drawableRight="@drawable/selector_sort_choice"
+            android:focusable="true"
+            android:paddingRight="8dp"
+            android:text="新品优先"
+            android:textColor="@color/selector_choice_text"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_pop_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:drawableRight="@drawable/selector_sort_choice"
+            android:focusable="true"
+            android:paddingRight="8dp"
+            android:text="评论数从高到低"
+            android:textColor="@color/selector_choice_text"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pop_cover_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"/>
+</LinearLayout>

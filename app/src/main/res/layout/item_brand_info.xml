@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/list_item_bg_normal"
+        android:layout_height="wrap_content">
+
+        <com.sugar.myapplication.view.RatioImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/product_default_img"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/shape_text_topic_pressed"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

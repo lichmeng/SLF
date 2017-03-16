@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">红孩儿</string>
+    <string name="tabs_cart">购物车</string>
+    <string name="tabs_my_count">我的</string>
+    <string name="tabs_discovery">发现</string>
+    <string name="tabs_category">分类</string>
+    <string name="tabs_home">首页</string>
+    <string name="load_error">重新加载</string>
+    <string name="home_scan">扫一扫</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--引导页-->
+    <string name="action_settings">Settings</string>
+
+    <string name="welcomanim_title_login">登录</string>
+    <string name="welcomanim_title_regin">注册</string>
+    <string name="welcomanim_title_phone">+86</string>
+    <string name="welcomanim_title_psw">密码</string>
+    <string name="welcomanim_title_forgetpsw">忘记密码?</string>
+    <string name="welcomanim_title_psw_hint">请输入用户密码</string>
+    <string name="welcomanim_title_social">使用社交账号快速登录</string>
+    <string name="welcomanim_title_social_weibo">微博登录</string>
+    <string name="welcomanim_title_social_wechat">微信登录</string>
+    <string name="welcomanim_title_social_qq">QQ登录</string>
+    <string name="welcomanim_title_share">分享到社区</string>
+    <string name="welcomanim_title_policy">隐私政策</string>
+    <string name="welcomanim_down">登录红孩子畅享购物</string>
+
+
+    <string name="input_phone">请输入你的手机号码</string>
+    <string name="reg_select_country">请选择国家地区</string>
+    <string name="reg_write_identify_code">请输入短信验证码</string>
+    <string name="smssdk_write_mobile_phone">请填写手机号码</string>
+    <string name="reg_send_ver">发送</string>
+    <string name="reg_next">验证并登录</string>
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_bg_normal"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iv_pay_back"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_abouttitle_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="结算中心"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货人:123" />
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+                android:text="电话:13266649330" />
+
+            <TextView
+                android:id="@+id/tv_user_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user"
+                android:layout_marginTop="8dp"
+                android:text="收货地址:重庆沙坪坝区西永天街5号" />
+
+            <ImageView
+                android:id="@+id/iv_user_center1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/forwardto_right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_user_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1000"
+                android:padding="8dp"
+                android:text="支付方式: 支付宝" />
+
+            <ImageView
+                android:id="@+id/iv_user_center2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/forwardto_right" />
+        </RelativeLayout>
+        <!--商品列表-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="商品列表:" />
+
+        <ListView
+
+            android:id="@+id/lv_pay_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </ListView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1000"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_pay_sumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量总计:" />
+
+            <TextView
+                android:id="@+id/tv_pay_sumnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_pay_carry_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pay_sumText"
+                android:text="运费:" />
+
+            <TextView
+                android:id="@+id/tv_pay_carry_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_pay_sumnum"
+                android:text="￥0.00" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pay_carry_text"
+                android:text="应付金额:"
+                android:textColor="#8f00"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_pay__money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_pay_carry_money"
+                android:text="￥0.00"
+                android:textColor="#8f00"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_cart_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_cart_bt_bg"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="提交订单"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+</LinearLayout>

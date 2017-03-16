@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/ptr_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <!--<com.sugar.myapplication.view.TranslucentScrollView
+        android:id="@+id/tsv_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.sugar.myapplication.view.TranslucentScrollView>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <include layout="@layout/layout_toolbar"/>
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

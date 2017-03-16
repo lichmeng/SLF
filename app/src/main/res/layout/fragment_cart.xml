@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_err_normal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="购物车"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_sub_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cart_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:text="刷新"
+                android:textColor="@color/selector_cart_textcolorr"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/v_cart"
+                android:layout_width="0.5dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#8000" />
+
+            <TextView
+                android:id="@+id/tv_cart_clearall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingRight="10dp"
+                android:text="清空"
+                android:textColor="@color/selector_cart_textcolorr"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cart_myorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_sub_container"
+            android:layout_marginTop="2dp"
+            android:paddingRight="15dp"
+            android:text="查看订单"
+            android:textColor="#2c3a8f"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"></ListView>
+
+        <include layout="@layout/cart_empty_layout" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cart_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_err_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <CheckBox
+            android:id="@+id/cb_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="全选"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_cart_money_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额合计:0"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cart_num_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量:0" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cart_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_join_cart"
+            android:text="去结算"
+            android:textColor="#bfff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

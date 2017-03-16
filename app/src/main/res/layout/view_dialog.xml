@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:background="#f8f8f8"
+              android:layout_height="190dp">
+<TextView
+    android:layout_width="match_parent"
+    android:text="操作"
+    android:textColor="#3b3b3b"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:layout_marginTop="8dp"
+    android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="220dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="1dp"/>
+    <Button
+        android:text="加入购物车"
+        android:layout_width="match_parent"
+        android:textColor="#dd3b3b3b"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_add2cart"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/category_bg_normal"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="关注"
+        android:layout_width="match_parent"
+        android:textColor="#dd3b3b3b"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/btn_add2forcus"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/category_bg_normal"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

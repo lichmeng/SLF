@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="38dp"
+              android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/ib_category_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:padding="5dp"
+        android:src="@drawable/selector_back"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/ll_search_bar"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_home_search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_search"/>
+
+        <TextView
+            android:id="@+id/tv_search_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#aa666666"
+            android:textSize="18sp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp">
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/icon_mic"
+                />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_clear"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_mode_lv"
+            android:visibility="gone"
+            android:src="@drawable/listview"
+            style="@style/listview2gridview"/>
+
+        <ImageButton
+            android:id="@+id/ib_mode_gv"
+            android:layout_width="35dp"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gridview"/>
+    </FrameLayout>
+
+</LinearLayout>

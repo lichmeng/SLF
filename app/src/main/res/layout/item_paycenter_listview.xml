@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp">
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_cart_pay_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/product_default_img" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cart_pay_title"
+            style="@style/TitleText"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="商品的详细名称" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textColor="#9000"
+                android:id="@+id/tv_pay_calor"
+                style="@style/SubTitleText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="颜色：" />
+
+            <TextView
+                android:textColor="#9000"
+                android:id="@+id/tv_pay_size"
+                style="@style/SubTitleText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="尺码：" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                style="@style/SubTitleText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="价格："
+                android:textColor="#ff0000" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pay_numlll"
+                    android:layout_height="wrap_content"
+                    android:layout_width="28dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#8f00" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

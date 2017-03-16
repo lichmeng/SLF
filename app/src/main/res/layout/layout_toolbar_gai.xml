@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_home_search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_search_gray"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="价格公道,童叟无欺"
+            android:textColor="#666"
+            android:textSize="15sp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp">
+
+            <ImageView
+                android:id="@+id/iv_mic"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/ic_mic_gray"
+                android:scaleType="centerInside"/>
+
+            <ImageButton
+                android:id="@+id/ib_search_clear"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_clear"
+                android:visibility="invisible"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_margin="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right">
+
+        <ImageButton
+            android:visibility="invisible"
+            android:id="@+id/btn_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/listview"/>
+
+        <ImageButton
+            android:id="@+id/btn_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/gridview"/>
+    </FrameLayout>
+
+</LinearLayout>

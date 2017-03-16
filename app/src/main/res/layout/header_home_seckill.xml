@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="3dp"
+            android:text="红孩子秒杀"
+            android:textColor="#f00"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_left_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="05:00:00"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/mine_arrow_right"
+            android:text="更多秒杀"
+            android:textColor="#333"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_seckill"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mine_people"/>
+    <TextView
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:text="赵刚"
+        android:id="@+id/tv_comment_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:maxLines="2"/>
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="time"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.4"
+        android:background="#dddddd"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="100dp">
+      <TextView
+
+          android:textSize="18sp"
+          android:padding="10dp"
+          android:text="不错不错不错不错不错不错不错不错不错不错不错"
+          android:id="@+id/tv_comment_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:lines="4"/>
+      <ImageButton
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="10dp"
+          android:id="@+id/ib_comment_session"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentBottom="true"
+          android:background="@android:color/transparent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/mine_session"/>
+      <ImageButton
+          android:layout_toLeftOf="@+id/ib_comment_session"
+          android:id="@+id/ib_comment_like"
+          android:layout_alignParentBottom="true"
+          android:background="@android:color/transparent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/goods_info_ike"/>
+
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_bg_normal"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iv_complete_back"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_abouttitle_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="完成支付"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1000"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_complete_order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单编号:" />
+
+        <TextView
+            android:id="@+id/tv_complete_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="8" />
+
+
+        <TextView
+            android:id="@+id/tv_order_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_complete_order_text"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:text="下单时间:" />
+
+        <TextView
+            android:id="@+id/tv_order_time_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_complete_order_num"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:text="8" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_time_text"
+            android:text="总金额:"
+            android:textColor="#8f00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_order_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_order_time_num"
+            android:text="￥175.20"
+            android:textColor="#8f00"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_cart_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_cart_bt_bg"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="确认付款"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

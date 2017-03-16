@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sugar.myapplication.activity.HomeMsgActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="消息中心"
+            android:textColor="#f00"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前消息为空"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

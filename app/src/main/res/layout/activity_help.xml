@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fa4b4b">
+
+        <ImageView
+            android:id="@+id/iv_back_helpcenter"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_abouttitle_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:text="帮助中心"
+            android:textSize="24dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/selector_list_item"
+        android:id="@+id/rv_shoppingguide_help"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物指南:"/>
+        <ImageView
+            android:id="@+id/iv_shoppingguide_help"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_help_in"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="@drawable/selector_list_item"
+        android:id="@+id/rv_soldserver_hel"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="售后服务:"/>
+        <ImageView
+            android:id="@+id/iv_soldserver_help"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_help_in"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="@drawable/selector_list_item"
+        android:id="@+id/rv_diliverway_help"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送方式:"/>
+        <ImageView
+            android:id="@+id/iv_diliverway_help"
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_help_in"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="@drawable/selector_list_item"
+        android:id="@+id/rv_opinion_help"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意见反馈:"/>
+        <ImageView
+
+            android:layout_alignParentRight="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_help_in"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="@drawable/selector_list_item"
+        android:id="@+id/rl_servenum_helpcenter"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp">
+        <TextView
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话:    2222222"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#aaa"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</LinearLayout>

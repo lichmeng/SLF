@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_category_navigator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_category_item"
+    android:gravity="center"
+    android:maxLines="1"
+    android:padding="15dp"
+    android:text="易筋经就"
+    android:textColor="@color/selector_item_category_text_color"
+    android:textSize="16sp"/>

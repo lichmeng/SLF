@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sugar.myapplication.activity.TopicPListActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <include layout="@layout/layout_toolbar_gai"/>
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="促销商品"
+                    android:textColor="#f00"
+                    android:textSize="20sp"/>
+
+
+                <FrameLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right">
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/btn_listview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/listview"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/gridview"/>
+                </FrameLayout>-->
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <RadioGroup
+                android:id="@+id/rg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rb_sale_down"
+                    style="@style/rb_topic_list_button"
+                    android:checked="true"
+                    android:text="销量"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb_price"
+                    style="@style/rb_topic_list_button"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/selector_price_filter"
+                    android:text="价格"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb_shelves_down"
+                    style="@style/rb_topic_list_button"
+                    android:text="时间"/>
+
+                <RadioButton
+                    android:id="@+id/rb_comment_down"
+                    style="@style/rb_topic_list_button"
+                    android:text="评价"/>
+
+            </RadioGroup>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.sugar.myapplication.view.NestedScrollingListView
+                android:id="@+id/lv_topic_plist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.sugar.myapplication.view.NestedScrollingListView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_topic_plist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+            </android.support.v7.widget.RecyclerView>
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

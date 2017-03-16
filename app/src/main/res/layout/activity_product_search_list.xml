@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--toolbar-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        >
+
+        <include layout="@layout/category_product_list_toobar"/>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#66333333"/>
+
+    <!--综合 销量 价格 筛选-->
+    <RadioGroup
+        android:id="@+id/rg_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_order_summary"
+            style="@style/category_detail_rb"
+            android:drawableRight="@drawable/selector_arrow_order"
+            android:text="综合"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_order_salenum"
+            style="@style/category_detail_rb"
+            android:checked="true"
+            android:text="销量"/>
+
+        <RadioButton
+            android:id="@+id/rb_order_price"
+            style="@style/category_detail_rb"
+            android:drawableRight="@drawable/selector_price_filter"
+            android:text="价格"/>
+
+        <RadioButton
+            android:id="@+id/rb_order_condition"
+            style="@style/category_detail_rb"
+            android:layout_marginRight="3dp"
+            android:drawableRight="@drawable/selector_search_filter"
+            android:text="筛选"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#66333333"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                android:id="@+id/gv_display_mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/lv_display_mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                android:id="@+id/ib_back_top"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_search_top"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/ib_back_record"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_above="@id/ib_back_top"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_search_foot"
+                android:clickable="true"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/ib_search_cart"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_above="@id/ib_back_top"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_add2cart"
+                android:clickable="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_search_result"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="抱歉,没有找到商品额~"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/fragment_mine">
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_mine_item_about_us"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mine_collection"/>
+
+        <TextView
+            style="@style/mine_tv_list_name"
+            android:layout_toRightOf="@id/iv_mine_item_about_us"
+            android:text="关于红孩子"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mine_arrow_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_mine_item_help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mine_collection"/>
+
+        <TextView
+            style="@style/mine_tv_list_name"
+            android:layout_toRightOf="@id/iv_mine_item_help"
+            android:text="帮助"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mine_arrow_right"/>
+    </RelativeLayout>
+</LinearLayout>

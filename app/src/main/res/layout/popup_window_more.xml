@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tv_more_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/goods_more_session"
+        android:gravity="center"
+        android:text="消息"
+        android:textColor="#9000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/goods_more_home"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="#9000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tv_more_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search_right"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="#9000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tv_more_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/goods_info_ike"
+        android:gravity="center"
+        android:text="我的关注"
+        android:textColor="#9000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:padding="8dp"
+        android:id="@+id/tv_more_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/goods_more_footer"
+        android:gravity="center"
+        android:text="消息记录"
+        android:textColor="#9000"
+        android:textSize="18sp" />
+</LinearLayout>

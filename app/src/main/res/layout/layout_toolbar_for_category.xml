@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:showIn="@layout/fragment_home">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@null"
+            android:src="@drawable/selector_scan"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ll_search_intent"
+        android:layout_weight="1"
+        android:background="@drawable/shape_home_search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/icon_search"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="价格公道,童叟无欺"
+            android:textSize="15sp"/>
+
+        <ImageButton
+            android:layout_marginRight="3dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/icon_mic"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_message"/>
+    </LinearLayout>
+
+</LinearLayout>
